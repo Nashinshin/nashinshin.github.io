@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+    <script async src="./index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/b47b10a725.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap");
+    </style>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <a
+        href="https://www.linkedin.com/in/ignacio-juarez-99b869275/?locale=en_US"
+        ><div class="final-logo-container">
+          <span><i class="fas fa-laptop-code"></i></span>
+          <p class="final-logo-name">Nashin</p>
+        </div></a
+      >
+      <div class="menu-container">
+        <div class="menu">
+          <a class="portfolio" href="https://nashinshin.github.io">Portfolio</a>
+          <a class="menu-servicios" href="#services-container">Servicios</a>
+          <a
+            class="contacto"
+            href="mailto:webdev.nashin@gmail.com?Subject=Me%20Interesa%20Tu%20Trabajo"
+            >Contacto</a
+          >
+        </div>
+        <div class="burguer">
+          <button id="abrirModal"><i class="fas fa-bars"></i></button>
+        </div>
+        <div class="modal" id="ventanaModal">
+          <div class="contenido-modal">
+            <span class="cerrar">&times;</span>
+            <a class="modal-portfolio" href="#presentacion-container"
+              >Portfolio</a
+            >
+            <a class="modal-service" href="#services-container">Servicios</a>
+            <a
+              class="modal-contact"
+              href="mailto:webdev.nashin@gmail.com?Subject=Me%20Interesa%20Tu%20Trabajo"
+              >Contacto</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+    <h1 class="intro">
+      <div class="greetings">
+        <div class="palabras-container">
+          <p class="hello">Hola</p>
+          <p class="Im">Soy</p>
+          <p class="Nachito">Ignacio</p>
+        </div>
+        <div id="arrowAnim">
+          <div class="arrowSliding">
+            <div class="arrow"></div>
+          </div>
+          <div class="arrowSliding delay1">
+            <div class="arrow"></div>
+          </div>
+          <div class="arrowSliding delay2">
+            <div class="arrow"></div>
+          </div>
+          <div class="arrowSliding delay3">
+            <div class="arrow"></div>
+          </div>
+        </div>
+      </div>
+    </h1>
+    <h2 class="presentacion-container" id="presentacion-container">
+      <div class="presentacion">
+        <p class="about-me">
+          Mi nombre es Ignacio Juarez, soy front end developer desde hace poco
+          tiempo y estoy buscando empezar con mis primeros proyectos.
+        </p>
+      </div>
+      <img
+        src="https://i.pinimg.com/236x/19/3d/c9/193dc921bd8b80df15ac408d95d91d19.jpg"
+        alt=""
+        class="mi-foto"
+      />
+    </h2>
+    <h3 class="services-container" id="services-container">
+      <div class="h3-title">
+        <p class="h3-my">Mis</p>
+        <p class="h3-service">servicios</p>
+      </div>
+      <div class="servicios">
+        <div class="servicio">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoV8G0boGboQgN3h6rwzQiyT2H2ryaZQ-2mg&usqp=CAU"
+            alt=""
+            class="service-img"
+          />
+          <p class="service-title">Desarrollo de páginas web</p>
+          <p class="service-description">
+            Creación de página webs, totalmente responsive y mobile first.
+          </p>
+        </div>
+        <div class="servicio">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv79gmyVq1OnQZnP4gS5asrtFRFdttnZbkBpjbmpzJA9C-RcC1wGMucYUH2qxHpgjBVbY&usqp=CAU"
+            alt=""
+            class="service-img"
+          />
+          <p class="service-title">Animaciones</p>
+          <p class="service-description">
+            Uso de Animaciones para la creacion de paginas web. En esta misma
+            uso alguna tecnicas de animación.
+          </p>
+        </div>
+        <div class="servicio">
+          <img
+            src="https://murdoch.kaplan.com.sg/wp-content/themes/murdoch202109/img/prog-banner/mobile-web-app-development.jpg"
+            alt=""
+            class="service-img"
+          />
+          <p class="service-title">App Movil</p>
+          <p class="service-description">
+            Creacion de aplicaciones web para movil.
+          </p>
+        </div>
+      </div>
+    </h3>
+    <h4 class="form-container" id="contactame">
+      <form class="form">
+        <p class="contact-me">Escribime</p>
+        <p class="form-name">Nombre</p>
+        <input
+          type="text"
+          class="form-name-input"
+          value="Tu Nombre"
+          onFocus="if (this.value=='Tu Nombre') this.value='';"
+        />
+        <p class="form-email">Email</p>
+        <input
+          type="text"
+          class="form-email-input"
+          value="tu@mail.com"
+          onFocus="if (this.value=='tu@mail.com') this.value='';"
+        />
+        <p class="form-msg">Mensaje</p>
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          class="form-msg-textarea"
+        ></textarea>
+        <button class="form-send">
+          Enviar <i class="far fa-paper-plane"></i>
+        </button>
+      </form>
+    </h4>
+    <h5 class="final-container">
+      <header class="final-header">
+        <a
+          href="https://www.linkedin.com/in/ignacio-juarez-99b869275/?locale=en_US"
+          ><div class="final-logo-container">
+            <span><i class="fas fa-laptop-code"></i></span>
+            <p class="final-logo-name">Nashin</p>
+          </div></a
+        >
+      </header>
+      <div class="final-tags">
+        <div class="final-home">
+          <span><i class="fas fas fa-house"></i></span>
+          <a class="final-home-name" href="#header">Home</a>
+        </div>
+        <div class="final-service">
+          <span><i class="fas fa-user"></i></span>
+          <a class="final-service-name" href="#services-container">Servicios</a>
+        </div>
+        <div class="final-contact">
+          <span><i class="fas fa-phone"></i></span>
+          <a
+            class="final-contact-name"
+            href="mailto:webdev.nashin@gmail.com?Subject=Me%20Interesa%20Tu%20Trabajo"
+            >Contacto</a
+          >
+        </div>
+      </div>
+      <div class="social-media">
+        <div class="linkedin-tag">
+          <a
+            href="https://www.linkedin.com/in/ignacio-juarez-99b869275/?locale=en_US"
+            target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+        </div>
+        <div class="github-tag">
+          <a href="https://github.com/Nashinshin" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+        </div>
+        <div class="email-tag">
+          <a
+            href="mailto:webdev.nashin@gmail.com?Subject=Me%20Interesa%20Tu%20Trabajo"
+            ><i class="far fa-envelope"></i
+          ></a>
+        </div>
+      </div>
+      <div class="copyright-container">
+        <p class="copyright"><span>&copy;2023 - Nachito</span></p>
+      </div>
+    </h5>
+  </body>
+</html>
